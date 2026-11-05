@@ -269,6 +269,84 @@
   .dock.show { transform: none; }
   .dock .btn { max-width: 488px; margin: 0 auto; min-height: 52px; }
 
+  /* Endorfit Race */
+  .race {
+    margin-top: 56px;
+    padding: 26px 22px;
+    border: 2px solid var(--accent);
+    border-radius: 18px;
+    background: var(--surface);
+  }
+  .race .badge {
+    display: inline-block;
+    padding: 4px 12px;
+    margin-bottom: 12px;
+    border-radius: 999px;
+    background: var(--accent);
+    color: var(--on-accent);
+    font-weight: 700;
+    font-size: 14px;
+  }
+  .race h2 { font-size: 56px; margin: 0 0 8px; }
+  .race .sub { margin-bottom: 22px; font-size: 19px; }
+  .race-price {
+    padding: 18px;
+    border-radius: 14px;
+    background: color-mix(in srgb, var(--accent) 12%, transparent);
+    margin-bottom: 26px;
+  }
+  .race-price p { margin: 0; }
+  .price-label { font-weight: 700; font-size: 15px; color: var(--accent); }
+  .price { margin-top: 6px !important; display: flex; align-items: baseline; flex-wrap: wrap; gap: 4px 10px; }
+  .price .amount {
+    font-family: "Big Shoulders Display", "Arial Narrow", Impact, sans-serif;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 1;
+  }
+  .price .per { font-weight: 600; font-size: 17px; }
+  .price-note { margin-top: 6px !important; color: var(--muted); font-size: 15px; }
+  .race .mini { margin: 0 0 4px; font-size: 16px; font-weight: 700; color: var(--muted); }
+  .race-days { list-style: none; margin: 0 0 22px; padding: 0; }
+  .race-days li {
+    display: flex; justify-content: space-between; align-items: center; gap: 12px;
+    padding: 14px 0;
+    border-top: 1px solid var(--line);
+  }
+  .race-days li:last-child { border-bottom: 1px solid var(--line); }
+  .race-days strong { font-size: 18px; }
+  .race-days.terms li { flex-wrap: wrap; row-gap: 2px; }
+  .race-days.terms strong { flex: 0 0 auto; }
+  .race-days.terms span { flex: 1 1 160px; text-align: right; color: var(--muted); font-size: 16px; }
+  .race-days.terms .val { color: var(--text); font-weight: 700; font-size: 18px; }
+  .chips { display: flex; gap: 8px; }
+  .chip {
+    padding: 6px 16px;
+    border-radius: 999px;
+    border: 1.5px solid var(--accent);
+    font-weight: 700;
+    font-size: 17px;
+    color: var(--text) !important;
+  }
+  .limited {
+    margin: 0 0 20px;
+    padding: 14px 16px;
+    border-radius: 12px;
+    border: 1.5px dashed var(--accent);
+    font-size: 16px;
+  }
+  .limited strong { color: var(--accent); }
+  .race-actions { display: grid; gap: 10px; }
+  @media (min-width: 700px) {
+    .race {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 44px;
+      align-items: start; padding: 40px; margin-top: 72px;
+    }
+    .race h2 { font-size: 72px; }
+    .race-price { margin-bottom: 0; }
+    .price .amount { font-size: 76px; }
+  }
+
   /* ===== TABLET (a partir de 700px) ===== */
   @media (min-width: 700px) {
     body { font-size: 18px; }
